@@ -1,6 +1,11 @@
 /*
  * Globals
  */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
 
 
 /* Custom default button */
@@ -17,8 +22,7 @@
  */
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  
 }
 
 .cover-container {
@@ -29,6 +33,24 @@ body {
 /*
  * Header
  */
+
+ .banner-wrap {
+  background-image: url(./assets/christina-wocintechchat-com-x29idTmYGXg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+}
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
